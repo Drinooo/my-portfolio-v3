@@ -23,7 +23,9 @@ module.exports = withMT({
     fontSize: {
       nav: ["24px", { lineHeight: "auto" }],
       button: ["18px", {lineHeight: "auto"}],
-      footer: ["20px", {lineHeight: "auto"}]
+      footer: ["20px", {lineHeight: "auto"}],
+      h1: ["150px", {lineHeight: "auto"}],
+      name: ["80px"]
     },
     fontWeight: {
       thin: "100",
