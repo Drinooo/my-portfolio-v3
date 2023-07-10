@@ -9,10 +9,11 @@ import { Lines, Sugar } from "react-preloaders";
 function App() {
   return (
     <>
-      <Sugar background="#151516" color="#FFF" time={3000} />
+      
       <NavbarComponent />
       <HeroSection />
       <FooterComponent />
+      <Sugar background="#151516" color="#FFF" time={3000} />
     </>
   );
 }

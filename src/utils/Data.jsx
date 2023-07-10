@@ -26,7 +26,7 @@ export const footer = [
   },
   {
     icon: <GmailIcon />,
-    src: ""
+    src: "villalobosaldrin18@gmail.com"
   },
 ]
 
