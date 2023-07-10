@@ -15,6 +15,27 @@ module.exports = withMT({
       main: ["Teko", "sans-serif"],
       body: ["Alumni Sans", "sans-serif"],
     },
+    colors: {
+      black: "#151516",
+      white: "#FFF",
+      transparent: "#FFF0",
+    },
+    fontSize: {
+      nav: ["24px", { lineHeight: "auto" }],
+      button: ["18px", {lineHeight: "auto"}],
+      footer: ["20px", {lineHeight: "auto"}]
+    },
+    fontWeight: {
+      thin: "100",
+      extralight: "200",
+      light: "300",
+      normal: "400",
+      medium: "500",
+      semibold: "600",
+      bold: "700",
+      extrabold: "800",
+      black: "900",
+    }
   },
   plugins: [],
 });
