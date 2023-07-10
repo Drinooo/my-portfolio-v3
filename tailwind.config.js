@@ -20,12 +20,22 @@ module.exports = withMT({
       white: "#FFF",
       transparent: "#FFF0",
     },
+    screens: {
+      sm: "425px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px",
+    },
     fontSize: {
       nav: ["24px", { lineHeight: "auto" }],
       button: ["18px", {lineHeight: "auto"}],
       footer: ["20px", {lineHeight: "auto"}],
       h1: ["150px", {lineHeight: "auto"}],
-      name: ["80px"]
+      h2: ["70px", {lineHeight: "auto"}],
+      h3: ["50px", {lineHeight: "auto"}],
+      body1: ["24px"],
+      name: ["80px"],
+      'sm-name': ["55px"],
     },
     fontWeight: {
       thin: "100",

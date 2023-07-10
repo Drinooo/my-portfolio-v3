@@ -9,6 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { navigation } from "../utils/Data";
 import { FilledButton } from "./ButtonComponent";
+import { Link } from "react-router-dom";
 
 export const NavbarComponent = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -23,12 +24,11 @@ export const NavbarComponent = () => {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
       {navigation.map((item) => (
-        <Typography
-          className="font-main font-normal text-nav"
-        >
-          <a href="#" className="flex items-center">
+        <Typography className="font-main font-normal text-nav">
+          {/* <a href="#" className="flex items-center">
             {item.title}
-          </a>
+          </a> */}
+          <Link to={item.path}>{item.title}</Link>
         </Typography>
       ))}
     </ul>
@@ -42,7 +42,7 @@ export const NavbarComponent = () => {
           href="#"
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
-          <img src="/images/AVLogoWhite.png" alt="" />
+          <img src="/images/AVLogoWhite.png" className="sm:w-14 lg:w-full" alt="" />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <FilledButton variant="filled">DOWNLOAD CV</FilledButton>

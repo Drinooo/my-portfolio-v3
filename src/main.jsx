@@ -4,12 +4,15 @@ import App from "./App.jsx";
 import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 import { Sugar } from "react-preloaders";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
-      <Sugar background="#151516" color="#FFF" time={3000} />
+      <BrowserRouter>
+        <App />
+        {/* <Sugar background="#151516" color="#FFF" time={3000} /> */}
+      </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
 );

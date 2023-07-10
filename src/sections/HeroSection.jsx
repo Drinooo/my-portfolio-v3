@@ -9,25 +9,25 @@ export const HeroSection = () => {
     <>
       <div className="flex flex-col flex-wrap justify-between space-y-12">
         <div className="container mx-auto text-white">
-          <Typography className="font-main font-normal text-name">HI, I'M ALDRIN VILLALOBOS</Typography>
+          <Typography className="font-main font-normal lg:text-name sm:text-sm-name">HI, I'M ALDRIN VILLALOBOS</Typography>
         </div>
         <Marquee autoFill direction="left">
           {jobs1.map((item) => (
-            <Typography className="font-main font-normal text-h1 stroke-4 stroke-white mr-[50px]">
+            <Typography className="font-main font-normal stroke-4 stroke-white mr-[50px]">
               <img src={item.title} alt="" />
             </Typography>
           ))}
         </Marquee>
         <Marquee autoFill direction="right">
           {jobs2.map((item) => (
-            <Typography className="font-main font-normal text-h1 stroke-4 stroke-white mr-[50px]">
+            <Typography className="font-main font-normal stroke-4 stroke-white mr-[50px]">
               <img src={item.title} alt="" />
             </Typography>
           ))}
         </Marquee>
         <Marquee autoFill direction="left">
           {jobs3.map((item) => (
-            <Typography className="font-main font-normal text-h1 stroke-4 stroke-white mr-[50px]">
+            <Typography className="font-main font-normal stroke-4 stroke-white mr-[50px]">
               <img src={item.title} alt="" />
             </Typography>
           ))}
