@@ -13,7 +13,7 @@ function App() {
       <NavbarComponent />
       <HeroSection />
       <FooterComponent />
-      <Sugar background="#151516" color="#FFF" time={3000} />
+      
     </>
   );
 }
