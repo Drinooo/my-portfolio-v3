@@ -35,7 +35,7 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="mx-auto max-w-full shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none bg-black py-2 px-4 lg:px-8 lg:py-4">
+    <Navbar className="mx-auto max-w-full shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none fixed top-0 bg-black py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
