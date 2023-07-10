@@ -11,7 +11,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ThemeProvider>
       <BrowserRouter>
         <App />
-        <Sugar background="#151516" color="#FFF" time={3000} />
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
