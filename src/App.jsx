@@ -27,7 +27,7 @@ function App() {
       />
       <NavbarComponent />
       <MainRoutes />
-      <Sugar background="#151516" color="#FFF" />
+      <Sugar background="#151516" color="#FFF" time={3000} />
     </>
   );
 }
