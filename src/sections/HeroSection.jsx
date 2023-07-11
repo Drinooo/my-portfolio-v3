@@ -49,7 +49,7 @@ export const HeroSection = () => {
           </Marquee>
         </div>
       </div> */}
-      <div class="w-full">
+      <div class="max-w-full">
         <main
           role="main"
           class="w-full flex flex-col h-screen content-center justify-center"
@@ -57,7 +57,7 @@ export const HeroSection = () => {
           <div class="w-full">
             <div class="sm:flex sm:items-start">
               <div className="flex-col flex-grow flex">
-                <div className="container mx-auto text-white">
+                <div className="text-white lg:px-[100px] sm:px-[50px]">
                   <Typography className="font-main font-normal lg:text-name sm:text-sm-name">
                     HI, I'M ALDRIN VILLALOBOS
                   </Typography>

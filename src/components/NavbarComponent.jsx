@@ -35,8 +35,8 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="mx-auto max-w-full shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none absolute top-0 bg-black">
-      <div className="container mx-auto flex items-center justify-between text-black">
+    <Navbar className="max-w-full lg:px-[100px] sm:px-[50px] shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none absolute top-0 bg-black">
+      <div className="flex items-center justify-between text-black">
         <Typography as="a" href="#" className="cursor-pointer font-medium">
           <img
             src="/images/AVLogoWhite.png"
@@ -45,7 +45,7 @@ export const NavbarComponent = () => {
           />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block"vvvv>
           <FilledButton variant="filled">DOWNLOAD CV</FilledButton>
         </div>
 
