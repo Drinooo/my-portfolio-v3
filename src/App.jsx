@@ -28,7 +28,7 @@ function App() {
 
       {/* <MainRoutes /> */}
 
-      <div class="grid grid-cols-6 gap-10">
+      <div class="grid grid-cols-6 gap-0">
         <div class="col-center-2 col-span-7 text-white">
           <NavbarComponent />
         </div>

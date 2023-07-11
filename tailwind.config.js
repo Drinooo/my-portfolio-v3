@@ -33,7 +33,7 @@ module.exports = withMT({
       job: ["28px"],
       company: ["24px"],
       h1: ["150px", {lineHeight: "auto"}],
-      h2: ["70px", {lineHeight: "auto"}],
+      h2: ["100px", {lineHeight: "auto"}],
       h3: ["50px", {lineHeight: "auto"}],
       h4: ["30px", {lineHeight: "auto"}],
       body1: ["24px"],

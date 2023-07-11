@@ -1,3 +1,4 @@
+import { OutlinedChip } from "../components/ChipComponent";
 import { GithubIcon, GmailIcon, GraphicIcon, LinkedinIcon, UIUXIcon, WebDesignIcon, WebIcon } from "./Icons";
 import {
   AIIcon,
@@ -237,5 +238,58 @@ export const clients = [
   },
   {
     client: "Tiro Chat AI",
+  },
+]
+
+export const projects = [
+  {
+    id: "hypeburger",
+    img: "/images/Hypeburger.png",
+    title: "Hypeburger",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    tech: "",
+    github: "",
+    live: "",
+    isLeft: true,
+  },
+  {
+    id: "superare",
+    img: "/images/Superare.png",
+    title: "Superare",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    tech: "",
+    github: "https://github.com/Drinooo/superare-landing-page",
+    live: "https://superare-landing-page.vercel.app/",
+    isLeft: false,
+  },
+  {
+    id: "recozy",
+    img: "/images/Recozy.png",
+    title: "Recozy",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    tech: "",
+    github: "https://github.com/Drinooo/recozy-landing-page",
+    live: "https://recozy-landing-page.vercel.app/",
+    isLeft: true,
+  },
+  {
+    id: "msar",
+    img: "/images/MSAR.png",
+    title: "Montrose Search and Rescue",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    tech: "",
+    github: "",
+    live: "",
+    isLeft: false,
+  },
+  {
+    id: "numa",
+    img: "/images/Numa.png",
+    title: "Numa Recovery Center",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    tech: "",
+    github: "#",
+    live: "https://numarecoverycenters.com/",
+    isLeft: true,
   },
 ]

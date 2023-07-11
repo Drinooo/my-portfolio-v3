@@ -13,7 +13,7 @@ export const AboutPage = () => {
       >
         <div class="w-full">
           <div class="sm:flex sm:items-start">
-            <div className="flex-col flex-grow flex text-white space-y-[60px] overflow-y-auto h-[600px]">
+            <div className="flex-col flex-grow flex text-white space-y-[60px] overflow-y-auto h-[700px]">
               <div className="lg:px-[100px] sm:px-[50px]">
                 <Typography className="font-main font-semibold text-h2">
                   ABOUT ME
