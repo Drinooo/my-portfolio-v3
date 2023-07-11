@@ -7,8 +7,8 @@ import { jobs1, jobs2, jobs3 } from "../utils/Data";
 export const HeroSection = () => {
   return (
     <>
-      {/* <div className="flex-col flex-grow flex items-center justify-center h-fit">
-        <div className="container mx-auto text-white">
+      <div className="">
+        <div className="text-white lg:px-[100px] sm:px-[30px]">
           <Typography className="font-main font-normal lg:text-name sm:text-sm-name">
             HI, I'M ALDRIN VILLALOBOS
           </Typography>
@@ -48,8 +48,8 @@ export const HeroSection = () => {
             ))}
           </Marquee>
         </div>
-      </div> */}
-      <div class="max-w-full">
+      </div>
+      {/* <div class="max-w-full">
         <main
           role="main"
           class="w-full flex flex-col h-screen content-center justify-center"
@@ -101,7 +101,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </main>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { GithubIcon, GmailIcon, LinkedinIcon } from "./Icons";
+import { GithubIcon, GmailIcon, GraphicIcon, LinkedinIcon, UIUXIcon, WebDesignIcon, WebIcon } from "./Icons";
 import {
   AIIcon,
   BootstrapIcon,
@@ -154,3 +154,88 @@ export const icons = [
     tooltip: "Canva",
   },
 ];
+
+
+export const timeline = [
+  {
+    job: "Web Designer",
+    company: "New Media Services",
+    year: "2022 - Present",
+    desc: "Web Designer, Front End Developer, UI/UX Designer",
+    icon: "",
+  },
+  {
+    job: "Freelance Front End Developer",
+    company: "Project Midnight",
+    year: "2022",
+    desc: "GPS Mobile Application",
+    icon: "",
+  },
+  {
+    job: "Freelance Graphic Designer",
+    company: "Fiverr.com",
+    year: "2020 - 2022",
+    desc: "Logo Design, Business Card Design",
+    icon: "",
+  },
+  {
+    job: "Data Entry and Quality Assurance",
+    company: "Ollopa Corporation",
+    year: "2021",
+    desc: "Website QA, Data Entry",
+    icon: "",
+  },
+]
+
+export const skills = [
+  {
+    title: "Web/Mobile Design",
+    desc: "Proficient in Figma and Adobe XD for creating visually appealing and user-friendly website designs. Knowledgeable in designing responsive web interfaces that adapt to different screen sizes and devices.",
+    icon: <WebDesignIcon />,
+  },
+  {
+    title: "Graphic Design",
+    desc: "Proficient in Adobe Photoshop, Illustrator, and Canva for creating visually stunning graphics. Able to translate client requirements and brand guidelines into compelling visual designs.",
+    icon: <GraphicIcon />,
+  },
+  {
+    title: "UI/UX Design",
+    desc: "Proficient in Figma and Adobe XD for creating engaging and user-centric UI/UX designs. Able to create prototypes to communicate design concepts. Stay up-to-date with the latest UI/UX design trends and best practices.",
+    icon: <UIUXIcon />,
+  },
+  {
+    title: "Web Development",
+    desc: "Proficient in web development languages such as HTML, CSS, and JavaScript. Skilled in building responsive and user-friendly websites that work across different browsers and devices.",
+    icon: <WebIcon />,
+  },
+]
+
+export const clients = [
+  {
+    client: "NMS Philippines",
+  },
+  {
+    client: "Share My Circle",
+  },
+  {
+    client: "TribeTXT",
+  },
+  {
+    client: "My Allied Health Academy",
+  },
+  {
+    client: "Go Ahead Eagles",
+  },
+  {
+    client: "Her Erotic Story",
+  },
+  {
+    client: "Numa Behaviour Health",
+  },
+  {
+    client: "Montrose Search and Rescue",
+  },
+  {
+    client: "Tiro Chat AI",
+  },
+]

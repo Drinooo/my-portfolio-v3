@@ -25,10 +25,20 @@ function App() {
           border: "3px solid #FFF",
         }}
       />
-      <NavbarComponent />
-      <MainRoutes />
-      
 
+      {/* <MainRoutes /> */}
+
+      <div class="grid grid-cols-6 gap-10">
+        <div class="col-center-2 col-span-7 text-white">
+          <NavbarComponent />
+        </div>
+        <div class="col-center-2 col-span-7 text-white">
+          <MainRoutes />
+        </div>
+        <div class="col-center-2 col-span-7 text-white">
+          <FooterComponent />
+        </div>
+      </div>
       {/* <Sugar background="#151516" color="#FFF" time={3000} /> */}
     </>
   );

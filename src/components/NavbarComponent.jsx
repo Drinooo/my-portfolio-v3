@@ -25,9 +25,6 @@ export const NavbarComponent = () => {
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
       {navigation.map((item) => (
         <Typography className="font-main font-normal text-nav">
-          {/* <a href="#" className="flex items-center">
-            {item.title}
-          </a> */}
           <Link to={item.path}>{item.title}</Link>
         </Typography>
       ))}
@@ -35,7 +32,7 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="max-w-full lg:px-[100px] sm:px-[50px] shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none absolute top-0 bg-black">
+    <Navbar className="max-w-full lg:px-[100px] sm:px-[30px] shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none bg-black">
       <div className="flex items-center justify-between text-black">
         <Typography as="a" href="#" className="cursor-pointer font-medium">
           <img
@@ -45,7 +42,7 @@ export const NavbarComponent = () => {
           />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <div className="hidden lg:block"vvvv>
+        <div className="hidden lg:block">
           <FilledButton variant="filled">DOWNLOAD CV</FilledButton>
         </div>
 
