@@ -8,3 +8,7 @@
 :root{
   background-color: #151516;
 }
+
+body{
+  height: 100vh;
+}

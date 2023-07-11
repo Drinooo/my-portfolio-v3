@@ -4,9 +4,9 @@ import { FooterComponent } from "../components/FooterComponent";
 
 export const HomePage = () => {
   return (
-    <>
+    <div>
       <HeroSection />
       <FooterComponent />
-    </>
+    </div>
   );
 };

@@ -35,17 +35,20 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="mx-auto max-w-full shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none fixed top-0 bg-black py-2 px-4 lg:px-8 lg:py-4">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
-        >
-          <img src="/images/AVLogoWhite.png" className="sm:w-14 lg:w-full" alt="" />
+    <Navbar className="mx-auto max-w-full shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none absolute top-0 bg-black">
+      <div className="container mx-auto flex items-center justify-between text-black">
+        <Typography as="a" href="#" className="cursor-pointer font-medium">
+          <img
+            src="/images/AVLogoWhite.png"
+            className="sm:w-14 lg:w-full"
+            alt=""
+          />
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <FilledButton variant="filled">DOWNLOAD CV</FilledButton>
+        <div className="hidden lg:block">
+          <FilledButton variant="filled">DOWNLOAD CV</FilledButton>
+        </div>
+
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -58,7 +61,7 @@ export const NavbarComponent = () => {
               fill="none"
               className="h-6 w-6"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
               strokeWidth={2}
             >
               <path
@@ -72,7 +75,7 @@ export const NavbarComponent = () => {
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
               fill="none"
-              stroke="currentColor"
+              stroke="white"
               strokeWidth={2}
             >
               <path

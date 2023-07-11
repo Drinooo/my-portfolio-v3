@@ -21,7 +21,7 @@ module.exports = withMT({
       transparent: "#FFF0",
     },
     screens: {
-      sm: "425px",
+      sm: "375px",
       md: "768px",
       lg: "1024px",
       xl: "1440px",
@@ -35,7 +35,7 @@ module.exports = withMT({
       h3: ["50px", {lineHeight: "auto"}],
       body1: ["24px"],
       name: ["80px"],
-      'sm-name': ["55px"],
+      'sm-name': ["60px"],
     },
     fontWeight: {
       thin: "100",
