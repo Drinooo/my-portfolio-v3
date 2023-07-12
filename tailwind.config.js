@@ -30,8 +30,12 @@ module.exports = withMT({
       nav: ["24px", { lineHeight: "auto" }],
       button: ["18px", {lineHeight: "auto"}],
       footer: ["20px", {lineHeight: "auto"}],
-      job: ["28px"],
-      company: ["24px"],
+
+      job: ["28px", {lineHeight: "auto"}],
+      'sm-job': ["24px", {lineHeight: "auto"}],
+
+      company: ["24px", {lineHeight: "auto"}],
+      'sm-company': ["20px", {lineHeight: "auto"}],
       h1: ["150px", {lineHeight: "auto"}],
       h2: ["100px", {lineHeight: "auto"}],
      'sm-h2': ["50px", {lineHeight: "auto"}],

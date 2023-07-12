@@ -21,10 +21,10 @@ export const WorkCard = () => {
         <Card className="mt-6 w-96 text-white bg-transparent card">
           <CardBody>
             <WorkIcon />
-            <Typography className="font-main font-medium text-job">
+            <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
               {item.job}
             </Typography>
-            <Typography className="font-body font-medium text-company mb-2">
+            <Typography className="font-body font-medium lg:text-company sm:text-sm-company mb-2">
               {item.company} (<span>{item.year}</span>)
             </Typography>
             <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
@@ -44,7 +44,7 @@ export const SkillsCard = () => {
         <Card className="mt-6 w-96 text-white bg-transparent card">
           <CardBody>
             {item.icon}
-            <Typography className="font-main font-medium text-job">
+            <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
               {item.title}
             </Typography>
             <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
