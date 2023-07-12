@@ -15,10 +15,10 @@ export const AboutPage = () => {
           <div class="sm:flex sm:items-start">
             <div className="flex-col flex-grow flex text-white space-y-[60px] overflow-y-auto h-[700px]">
               <div className="lg:px-[100px] sm:px-[50px]">
-                <Typography className="font-main font-semibold text-h2">
+                <Typography className="font-main font-semibold lg:text-h2 sm:text-sm-h2">
                   ABOUT ME
                 </Typography>
-                <Typography className="font-body font-normal text-body1">
+                <Typography className="font-body font-normal lg:text-body1 sm:text-sm-body1">
                   I'm a web designer based in the Philippines. I'm passionate
                   about crafting visually appealing and user-friendly websites.
                   With a strong foundation in design principles, I'm eager to
@@ -29,17 +29,17 @@ export const AboutPage = () => {
                 </Typography>
               </div>
               <div className="lg:px-[100px] sm:px-[50px]">
-                <Typography className="font-main font-semibold text-h3">
+                <Typography className="font-main font-semibold lg:text-h3 sm:text-sm-h3">
                   TECH STACK
                 </Typography>
-                <div class="grid grid-cols-7 gap-[40px]">
+                <div class="grid lg:grid-cols-7 sm:grid-cols-4 gap-[40px]">
                   {icons.map((item) => (
                     <div>{item.icon}</div>
                   ))}
                 </div>
               </div>
               <div className="lg:px-[100px] sm:px-[50px]">
-                <Typography className="font-main font-semibold text-h3">
+                <Typography className="font-main font-semibold lg:text-h3 sm:text-sm-h3">
                   WORK EXPERIENCE
                 </Typography>
                 <div className="flex flex-row flex-wrap justify-between">
@@ -47,7 +47,7 @@ export const AboutPage = () => {
                 </div>
               </div>
               <div className="lg:px-[100px] sm:px-[50px]">
-                <Typography className="font-main font-semibold text-h3">
+                <Typography className="font-main font-semibold lg:text-h3 sm:text-sm-h3">
                   MAIN SKILLS
                 </Typography>
                 <div className="flex flex-row flex-wrap justify-between">
@@ -55,13 +55,13 @@ export const AboutPage = () => {
                 </div>
               </div>
               <div className="lg:px-[100px] sm:px-[50px]">
-                <Typography className="font-main font-semibold text-h3">
+                <Typography className="font-main font-semibold lg:text-h3 sm:text-sm-h3">
                   CLIENTS I'VE WORKED WITH
                 </Typography>
                 <div className="flex flex-row flex-wrap justify-between">
                   <Marquee autoFill>
                     {clients.map((item) => (
-                      <Typography className="font-main font-normal text-h4 mr-[40px]">
+                      <Typography className="font-main font-normal lg:text-h4 sm:text-sm-h4 mr-[40px]">
                         {item.client}
                       </Typography>
                     ))}

@@ -35,11 +35,18 @@ module.exports = withMT({
       h1: ["150px", {lineHeight: "auto"}],
       h2: ["100px", {lineHeight: "auto"}],
      'sm-h2': ["50px", {lineHeight: "auto"}],
+
       h3: ["50px", {lineHeight: "auto"}],
+      'sm-h3': ["30px", {lineHeight: "auto"}],
+
       h4: ["30px", {lineHeight: "auto"}],
+      'sm-h4': ["26px", {lineHeight: "auto"}],
+
       body1: ["24px", {lineHeight: "auto"}],
       'sm-body1': ["18px", {lineHeight: "auto"}],
-      body2: ["20px"],
+
+      body2: ["20px", {lineHeight: "auto"}],
+      'sm-body2': ["18px", {lineHeight: "auto"}],
       name: ["80px"],
       'sm-name': ["60px"],
     },

@@ -27,7 +27,7 @@ export const WorkCard = () => {
             <Typography className="font-body font-medium text-company mb-2">
               {item.company} (<span>{item.year}</span>)
             </Typography>
-            <Typography className="font-body font-medium text-body2">
+            <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
               {item.desc}
             </Typography>
           </CardBody>
@@ -47,7 +47,7 @@ export const SkillsCard = () => {
             <Typography className="font-main font-medium text-job">
               {item.title}
             </Typography>
-            <Typography className="font-body font-medium text-body2">
+            <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
               {item.desc}
             </Typography>
           </CardBody>
