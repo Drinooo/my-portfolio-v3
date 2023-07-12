@@ -1,8 +1,8 @@
 import { Chip } from '@material-tailwind/react'
 import React from 'react'
 
-export const OutlinedChip = ({variant, value}) => {
+export const OutlinedChip = ({value}) => {
   return (
-    <Chip variant="outlined" value={value} />
+    <Chip variant="outlined" color="cyan" value={value} />
   )
 }

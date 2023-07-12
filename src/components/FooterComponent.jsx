@@ -4,7 +4,7 @@ import { footer } from "../utils/Data";
 
 export const FooterComponent = () => {
   return (
-      <footer className="flex w-full flex-col flex-wrap items-center justify-center gap-y-6 gap-x-12 py-6 text-center md:justify-between text-white absolute bottom-0">
+      <footer className="bg-black flex w-full flex-col flex-wrap items-center justify-center gap-y-6 gap-x-12 py-4 text-center md:justify-between text-white absolute bottom-0">
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           {footer.map((item) => (
             <li>

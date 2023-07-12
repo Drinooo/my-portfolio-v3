@@ -11,7 +11,7 @@ export const ProjectsPage = () => {
       >
         <div class="w-full">
           <div class="sm:flex sm:items-start">
-            <div className="flex-col flex-grow flex text-white space-y-[60px] overflow-y-auto h-[700px]">
+            <div className="flex-col flex-grow flex text-white space-y-[60px]">
               <div className="lg:px-[100px] sm:px-[50px] text-center">
                 <Typography className="font-main font-semibold text-h2">
                   MY PROJECTS

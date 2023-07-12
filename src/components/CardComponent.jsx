@@ -60,32 +60,41 @@ export const SkillsCard = () => {
 export const ProjectsCard = () => {
   return (
     <>
-      <div className="snap-y">
+      <div className="scroller space-y-40">
         {projects.map((item) => (
-          <div class="grid grid-cols-3 gap-4 snap-center">
+          <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-10">
+            {item.isLeft == false ? (
+              <div class="">
+                <img src={item.img} className="h-full w-full" alt="" />
+              </div>
+            ) : null}
             <div class="col-span-2 flex flex-col justify-center items-center">
-              <Typography className="font-main font-normal text-h2">
+              <Typography className="font-main font-normal lg:text-h2 sm:text-sm-h2">
                 {item.title}
               </Typography>
-              <Typography className="font-body font-normal text-body1">
+              <Typography className="font-body font-normal lg:text-body1 sm:text-sm-body1 text-center">
                 {item.desc}
               </Typography>
-              <div className="flex flex-row justify-center space-x-10">
+              {/* <div className="flex flex-row justify-center space-x-10">
                 {item.tech}
-              </div>
-              <div className="flex flex-row justify-center space-x-5">
-                <a href={item.github}>
-                  <GithubIcon />
-                </a>
+              </div> */}
+              <div className="flex flex-row justify-center space-x-5 mt-6">
+                {item.githubIcon == true ? (
+                  <a href={item.github}>
+                    <GithubIcon />
+                  </a>
+                ) : null}
                 <a href={item.live}>
                   <LiveIcon />
                 </a>
               </div>
             </div>
-            <div class="">
-              <img src={item.img} alt="" />
-            </div>
-          </div>
+            {item.isLeft == true ? (
+              <div class="">
+                <img src={item.img} className="h-full w-full" alt="" />
+              </div>
+            ) : null}
+          </section>
         ))}
       </div>
     </>
