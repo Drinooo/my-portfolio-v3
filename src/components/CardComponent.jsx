@@ -62,9 +62,9 @@ export const ProjectsCard = () => {
     <>
       <div className="scroller space-y-40">
         {projects.map((item) => (
-          <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-10">
+          <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-10 grid-col-center">
             {item.isLeft == false ? (
-              <div class="">
+              <div class="flex justify-center items-center col-span-1">
                 <img src={item.img} className="h-full w-full" alt="" />
               </div>
             ) : null}
@@ -90,7 +90,7 @@ export const ProjectsCard = () => {
               </div>
             </div>
             {item.isLeft == true ? (
-              <div class="">
+              <div class="flex justify-center items-center col-span-1">
                 <img src={item.img} className="h-full w-full" alt="" />
               </div>
             ) : null}
