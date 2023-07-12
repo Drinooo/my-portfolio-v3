@@ -9,14 +9,13 @@ export const FooterComponent = () => {
           {footer.map((item) => (
             <li>
               <a href={item.src}>
-                <Typography>{item.icon}</Typography>
+                {item.icon}
               </a>
             </li>
           ))}
         </ul>
         <Typography
-          color="blue-gray"
-          className="font-body font-normal text-footer"
+          className="font-body font-normal lg:text-footer sm:text-sm-footer"
         >
           © 2023. All Rights Reserved. Aldrin Villalobos
         </Typography>

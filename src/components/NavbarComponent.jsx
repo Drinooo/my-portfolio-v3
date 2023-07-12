@@ -32,7 +32,7 @@ export const NavbarComponent = () => {
   );
 
   return (
-    <Navbar className="max-w-full lg:px-[100px] sm:px-[30px] shadow-none border-none rounded-none bg-opacity-100 backdrop-saturate-0 backdrop-blur-none bg-black">
+    <Navbar className="max-w-full lg:px-[100px] sm:px-[30px] shadow-none border-none rounded-none bg-opacity-100 fixed top-0 backdrop-saturate-0 backdrop-blur-none bg-black">
       <div className="flex items-center justify-between text-black">
         <Typography as="a" href="#" className="cursor-pointer font-medium">
           <img

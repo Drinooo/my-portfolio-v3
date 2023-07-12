@@ -60,12 +60,12 @@ export const SkillsCard = () => {
 export const ProjectsCard = () => {
   return (
     <>
-      <div className="scroller space-y-40">
+      <div className="h-screen overflow-y-scroll snap-mandatory snap-y">
         {projects.map((item) => (
-          <section class="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-10 grid-col-center">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-x-10 h-screen snap-center">
             {item.isLeft == false ? (
               <div class="flex justify-center items-center col-span-1">
-                <img src={item.img} className="h-full w-full" alt="" />
+                <img src={item.img} className="" alt="" />
               </div>
             ) : null}
             <div class="col-span-2 flex flex-col justify-center items-center">
@@ -91,10 +91,10 @@ export const ProjectsCard = () => {
             </div>
             {item.isLeft == true ? (
               <div class="flex justify-center items-center col-span-1">
-                <img src={item.img} className="h-full w-full" alt="" />
+                <img src={item.img} className="" alt="" />
               </div>
             ) : null}
-          </section>
+          </div>
         ))}
       </div>
     </>
