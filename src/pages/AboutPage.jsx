@@ -11,10 +11,10 @@ export const AboutPage = () => {
         role="main"
         className="w-full flex flex-col content-center justify-center"
       >
-        <div className="w-full lg:py-40 sm:pt-28 sm:py-40">
+        <div className="w-full">
           <div className="sm:flex sm:items-start">
             <div className="flex-col flex-grow flex text-white space-y-[100px] overflow-y-auto h-screen">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-40">
                 <div className="space-y-[100px]">
                   <div className="lg:px-[100px] sm:px-[50px]">
                     <Typography className="font-main font-semibold lg:text-h2 sm:text-sm-h2">
@@ -73,7 +73,7 @@ export const AboutPage = () => {
                 <Typography className="font-main font-semibold lg:text-h3 sm:text-sm-h3">
                   MAIN SKILLS
                 </Typography>
-                <div className="flex flex-row flex-wrap justify-between">
+                <div className="flex flex-row flex-wrap justify-between mb-40">
                   <SkillsCard />
                 </div>
               </div>

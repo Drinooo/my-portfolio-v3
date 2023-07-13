@@ -12,7 +12,7 @@ export const ProjectsPage = () => {
         className="w-full flex flex-col h-screen content-center justify-start"
       >
         <div className="w-full">
-          <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <div className="">
             <div className="sm:flex sm:items-start flex flex-col text-white">
               <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
                 <div className="text-white lg:px-[100px] sm:px-[30px] w-full flex flex-row h-screen snap-center snap-always items-center justify-center">
@@ -21,7 +21,7 @@ export const ProjectsPage = () => {
                   </Typography>
                 </div>
                 {projects.map((item) => (
-                  <div class="grid lg:grid-cols-3 sm:grid-cols-1 h-screen snap-center snap-always lg:px-[100px] sm:px-[50px] sm:pb-40 lg:pb-0">
+                  <div class="grid lg:grid-cols-3 sm:grid-cols-1 h-screen snap-center snap-always lg:px-[100px] sm:px-[50px]">
                     {item.isLeft == false ? (
                       <div class="flex justify-center items-center col-span-1">
                         <img src={item.img} className="" alt="" />
