@@ -249,7 +249,7 @@ export const projects = [
     desc: "With meticulous care and dedication, I have skillfully developed and brought to fruition my very own portfolio design, harnessing the immense potential of Figma, React.js, Material UI, GitHub, and the Vercel app. By skillfully merging these state-of-the-art technologies, I have created an awe-inspiring and flawlessly functional masterpiece that seamlessly captivates the eye.",
     tech: [<OutlinedChip value={"Figma"} />, <OutlinedChip value={"HTML"} />, <OutlinedChip value={"CSS"} />, <OutlinedChip value={"React JS"} />, <OutlinedChip value={"MUI"} />],
     github: "https://github.com/Drinooo/my-portfolio-v2",
-    live: "https://vercel.com/drinooo/aldrinvillalobos",
+    live: "https://aldrinvillalobos.vercel.app/",
     githubIcon: true,
     isLeft: true,
   },

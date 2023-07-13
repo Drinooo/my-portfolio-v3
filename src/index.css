@@ -15,4 +15,5 @@
 
 ::-webkit-scrollbar {
   display: none;
+  overflow: -moz-scrollbars-none;
 }
