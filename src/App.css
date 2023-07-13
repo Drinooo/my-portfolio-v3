@@ -4,28 +4,16 @@
 
 .card {
   border: 1px solid #fff;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.4) 0%,
     rgba(255, 255, 255, 0.1) 100%
   );
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px); */
 }
 
-.scroller {
-  height: 400px;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-@media screen (min-width: 375px) {
-  .scroller {
-    height: 100px;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-}
-
-.scroller section {
-  scroll-snap-align: start;
+.icons{
+  background-color: #616161;
+  padding: 15px;
+  border-radius: 100%;
 }

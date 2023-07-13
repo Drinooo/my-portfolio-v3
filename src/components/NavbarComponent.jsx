@@ -22,11 +22,13 @@ export const NavbarComponent = () => {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-white">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {navigation.map((item) => (
-        <Typography className="font-main font-normal text-nav">
-          <Link to={item.path}>{item.title}</Link>
-        </Typography>
+        <div className="text-white">
+          <Typography className="font-main font-normal text-nav">
+            <Link to={item.path}>{item.title}</Link>
+          </Typography>
+        </div>
       ))}
     </ul>
   );

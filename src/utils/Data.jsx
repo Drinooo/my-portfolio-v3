@@ -1,5 +1,5 @@
 import { OutlinedChip } from "../components/ChipComponent";
-import { GithubIcon, GmailIcon, GraphicIcon, LinkedinIcon, UIUXIcon, WebDesignIcon, WebIcon } from "./Icons";
+import { EmailIcon, GithubIcon, GmailIcon, GraphicIcon, LinkedinIcon, LocationIcon, PhoneIcon, UIUXIcon, WebDesignIcon, WebIcon } from "./Icons";
 import {
   AIIcon,
   BootstrapIcon,
@@ -243,6 +243,17 @@ export const clients = [
 
 export const projects = [
   {
+    id: "portfoliov2",
+    img: "/images/portfoliov2.png",
+    title: "Portfolio V2",
+    desc: "With meticulous care and dedication, I have skillfully developed and brought to fruition my very own portfolio design, harnessing the immense potential of Figma, React.js, Material UI, GitHub, and the Vercel app. By skillfully merging these state-of-the-art technologies, I have created an awe-inspiring and flawlessly functional masterpiece that seamlessly captivates the eye.",
+    tech: [<OutlinedChip value={"Figma"} />, <OutlinedChip value={"HTML"} />, <OutlinedChip value={"CSS"} />, <OutlinedChip value={"React JS"} />, <OutlinedChip value={"MUI"} />],
+    github: "https://github.com/Drinooo/my-portfolio-v2",
+    live: "https://vercel.com/drinooo/aldrinvillalobos",
+    githubIcon: true,
+    isLeft: true,
+  },
+  {
     id: "hypeburger",
     img: "/images/Hypeburger.png",
     title: "Hypeburger",
@@ -294,5 +305,53 @@ export const projects = [
     live: "https://numarecoverycenters.com/",
     githubIcon: false,
     isLeft: false,
+  },
+  {
+    id: "maha",
+    img: "/images/MAHA.png",
+    title: "My Allied Health Academy",
+    desc: "We have meticulously crafted this exceptional UI/UX design using the versatile and powerful design tool, Figma. With utmost precision and attention to detail, we have conceptualized and implemented a visually stunning and user-centric interface, ensuring an intuitive and seamless user experience. By leveraging Figma's robust features and collaborative capabilities, we have brought our creative vision to life, delivering a design that not only delights the eye but also optimizes usability and engagement.",
+    tech: [<OutlinedChip value={"Figma"} />],
+    live: "#",
+    githubIcon: false,
+    isLeft: true,
+  },
+  {
+    id: "hes",
+    img: "/images/HES.png",
+    title: "Her Erotic Story",
+    desc: "Employing the versatile and potent design tool Figma, we have painstakingly developed an exceptional UI/UX design. Our unwavering commitment to precision and meticulous attention to detail enabled us to conceive and implement a visually captivating interface that prioritizes the user experience. Through harnessing Figma's robust features and collaborative capabilities, we transformed our creative vision into a tangible reality, delivering a design that not only enchants visually but also optimizes usability and fosters user engagement.",
+    tech: [<OutlinedChip value={"Figma"} />],
+    live: "#",
+    githubIcon: false,
+    isLeft: false,
+  },
+  {
+    id: "tribetxt",
+    img: "/images/tribetxt.png",
+    title: "TribeTXT (Rooms)",
+    desc: "Utilizing the versatile and powerful design tool Figma, we dedicatedly crafted an extraordinary UI/UX design. Our unwavering commitment to precision and meticulous attention to detail allowed us to conceive and execute a visually captivating interface that places user experience at the forefront. By leveraging the robust features and collaborative capabilities of Figma, we transformed our creative vision into a tangible reality, presenting a design that not only mesmerizes visually but also enhances usability and fosters meaningful user engagement.",
+    tech: [<OutlinedChip value={"Figma"} />],
+    live: "#",
+    githubIcon: false,
+    isLeft: true,
+  },
+]
+
+export const contact = [
+  {
+    icon: <PhoneIcon />,
+    title: "PHONE",
+    desc: "+639982115529",
+  },
+  {
+    icon: <EmailIcon />,
+    title: "EMAIL",
+    desc: "villalobosaldrin18@gmail.com",
+  },
+  {
+    icon: <LocationIcon />,
+    title: "ADDRESS",
+    desc: "Medigorin Street, San Antonio, Cabangan, Zambales",
   },
 ]

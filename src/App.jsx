@@ -25,18 +25,7 @@ function App() {
           border: "3px solid #FFF",
         }}
       />
-      {/* <MainRoutes /> */}
-      {/* <div class="grid grid-cols-6 gap-0 wrapper">
-        <div class="col-center-2 col-span-7 text-white">
-          <NavbarComponent />
-        </div>m
-        <div class="col-center-2 col-span-7 text-white">
-          <MainRoutes />
-        </div>
-        <div class="col-center-2 col-span-7 text-white">
-          <FooterComponent />
-        </div>
-      </div> */}
+      <Sugar background="#151516" color="#FFF" time={3000} />
       <div className="flex flex-col min-h-screen">
         <NavbarComponent />
         <main className="flex-grow">
@@ -44,7 +33,6 @@ function App() {
         </main>
         <FooterComponent />
       </div>
-      {/* <Sugar background="#151516" color="#FFF" time={3000} /> */}
     </>
   );
 }

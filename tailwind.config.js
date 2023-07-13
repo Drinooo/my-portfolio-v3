@@ -18,6 +18,7 @@ module.exports = withMT({
     colors: {
       black: "#151516",
       white: "#FFF",
+      purple: "#800080",
       transparent: "#FFF0",
     },
     screens: {
@@ -40,6 +41,7 @@ module.exports = withMT({
 
       h1: ["150px", {lineHeight: "auto"}],
       'sm-h1': ["100px", {lineHeight: "auto"}],
+      
       h2: ["100px", {lineHeight: "auto"}],
      'sm-h2': ["50px", {lineHeight: "auto"}],
 
