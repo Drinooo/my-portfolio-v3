@@ -43,7 +43,7 @@ export const AboutPage = () => {
                   </div>
                 </div>
                 <div className="lg:pr-[100px] sm:pr-[50px] flex items-center justify-center">
-                  <img src="/images/AboutImg2.png" className="max-w-full h-full" alt="" />
+                  <img src="/images/AboutImg.png" className="max-w-full h-full" alt="" />
                 </div>
               </div>
 
