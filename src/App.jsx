@@ -25,7 +25,7 @@ function App() {
           border: "3px solid #FFF",
         }}
       />
-      <Sugar background="#151516" color="#FFF" time={3000} />
+      {/* <Sugar background="#151516" color="#FFF" time={3000} /> */}
       <div className="flex flex-col min-h-screen">
         <NavbarComponent />
         <main className="flex-grow">

@@ -13,27 +13,46 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import { contact, projects, skills, timeline } from "../utils/Data";
 import { GithubIcon, LiveIcon, WorkIcon } from "../utils/Icons";
 import { OutlinedChip } from "./ChipComponent";
+import { motion } from "framer-motion";
+import { OnScrollAnimation } from "./OnScrollAnimation";
+
+const cardVariants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 50,
+    rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8,
+    },
+  },
+};
 
 export const WorkCard = () => {
   return (
     <>
       {timeline.map((item) => (
-        <Card className="mt-6 w-96 text-white bg-transparent card">
-          <CardBody className="flex flex-col items-center">
-            <div className="icons mb-6">
-              <WorkIcon />
-            </div>
-            <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
-              {item.job}
-            </Typography>
-            <Typography className="font-body font-medium lg:text-company sm:text-sm-company mb-2">
-              {item.company} (<span>{item.year}</span>)
-            </Typography>
-            <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
-              {item.desc}
-            </Typography>
-          </CardBody>
-        </Card>
+        <OnScrollAnimation>
+          <Card className="mt-6 w-96 text-white bg-transparent card">
+            <CardBody className="flex flex-col items-center">
+              <div className="icons mb-6">
+                <WorkIcon />
+              </div>
+              <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
+                {item.job}
+              </Typography>
+              <Typography className="font-body font-medium lg:text-company sm:text-sm-company mb-2">
+                {item.company} (<span>{item.year}</span>)
+              </Typography>
+              <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
+                {item.desc}
+              </Typography>
+            </CardBody>
+          </Card>
+        </OnScrollAnimation>
       ))}
     </>
   );
@@ -43,17 +62,19 @@ export const SkillsCard = () => {
   return (
     <>
       {skills.map((item) => (
-        <Card className="mt-6 w-96 text-white bg-transparent card">
-          <CardBody className="flex flex-col items-center">
-            <div className="icons mb-6">{item.icon}</div>
-            <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
-              {item.title}
-            </Typography>
-            <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2 text-center">
-              {item.desc}
-            </Typography>
-          </CardBody>
-        </Card>
+        <OnScrollAnimation>
+          <Card className="mt-6 w-96 text-white bg-transparent card">
+            <CardBody className="flex flex-col items-center">
+              <div className="icons mb-6">{item.icon}</div>
+              <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
+                {item.title}
+              </Typography>
+              <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2 text-center">
+                {item.desc}
+              </Typography>
+            </CardBody>
+          </Card>
+        </OnScrollAnimation>
       ))}
     </>
   );
@@ -77,9 +98,6 @@ export const ProjectsCard = () => {
               <Typography className="font-body font-normal lg:text-body1 sm:text-sm-body1 text-center">
                 {item.desc}
               </Typography>
-              {/* <div className="flex flex-row justify-center space-x-10">
-                {item.tech}
-              </div> */}
               <div className="flex flex-row justify-center space-x-5 mt-6">
                 {item.githubIcon == true ? (
                   <a href={item.github}>
@@ -107,17 +125,19 @@ export const ContactCard = () => {
   return (
     <>
       {contact.map((item) => (
-        <Card className="mt-6 w-96 text-white bg-transparent card">
-          <CardBody className="flex flex-col items-center">
-            <div className="icons mb-6">{item.icon}</div>
-            <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
-              {item.title}
-            </Typography>
-            <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
-              {item.desc}
-            </Typography>
-          </CardBody>
-        </Card>
+        <OnScrollAnimation>
+          <Card className="mt-6 w-96 text-white bg-transparent card">
+            <CardBody className="flex flex-col items-center">
+              <div className="icons mb-6">{item.icon}</div>
+              <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
+                {item.title}
+              </Typography>
+              <Typography className="font-body font-medium lg:text-body2 sm:text-sm-body2">
+                {item.desc}
+              </Typography>
+            </CardBody>
+          </Card>
+        </OnScrollAnimation>
       ))}
     </>
   );

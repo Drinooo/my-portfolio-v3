@@ -3,6 +3,7 @@ import React from "react";
 import { icons, projects } from "../utils/Data";
 import { GithubIcon, LiveIcon } from "../utils/Icons";
 import { ContactCard } from "../components/CardComponent";
+import { OnScrollAnimation } from "../components/OnScrollAnimation";
 
 export const ContactPage = () => {
   return (
@@ -17,9 +18,11 @@ export const ContactPage = () => {
               <div className="sm:flex sm:items-start">
                 <div className="flex-col flex-grow flex text-white">
                   <div className="lg:px-[100px] sm:px-[50px] flex justify-center">
-                    <Typography className="font-main font-semibold lg:text-h2 sm:text-sm-h2">
-                      CONTACT ME
-                    </Typography>
+                    <OnScrollAnimation>
+                      <Typography className="font-main font-semibold lg:text-h2 sm:text-sm-h2">
+                        CONTACT ME
+                      </Typography>
+                    </OnScrollAnimation>
                   </div>
                   <div className="lg:px-[100px] sm:px-[50px] -z-50">
                     <div className="flex flex-row flex-wrap justify-center gap-x-10">
