@@ -8,27 +8,21 @@ import { OnScrollAnimation } from "../components/OnScrollAnimation";
 export const ContactPage = () => {
   return (
     <>
-      <div className="max-w-full">
+      <div className="w-full">
         <main
           role="main"
           className="w-full flex flex-col h-screen content-center justify-center"
         >
           <div className="w-full">
-            <div className="">
-              <div className="sm:flex sm:items-start">
-                <div className="flex-col flex-grow flex text-white">
-                  <div className="lg:px-[100px] sm:px-[50px] flex justify-center">
-                    <OnScrollAnimation>
-                      <Typography className="font-main font-semibold lg:text-h2 sm:text-sm-h2">
-                        CONTACT ME
-                      </Typography>
-                    </OnScrollAnimation>
-                  </div>
-                  <div className="lg:px-[100px] sm:px-[50px] -z-50">
-                    <div className="flex flex-row flex-wrap justify-center gap-x-10">
-                      <ContactCard />
-                    </div>
-                  </div>
+            <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="sm:flex sm:items-start flex flex-col  lg:px-[100px] sm:px-[30px]">
+                <div className="text-white">
+                  <Typography className="font-main font-normal lg:text-h2 sm:text-sm-h2">
+                    CONTACT ME
+                  </Typography>
+                </div>
+                <div className="flex flex-wrap lg:space-x-10 justify-center">
+                  <ContactCard />
                 </div>
               </div>
             </div>

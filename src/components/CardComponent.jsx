@@ -126,7 +126,7 @@ export const ContactCard = () => {
     <>
       {contact.map((item) => (
         <OnScrollAnimation>
-          <Card className="mt-6 w-96 text-white bg-transparent card">
+          <Card className="mt-6 lg:w-96 sm:w-48 text-white bg-transparent card">
             <CardBody className="flex flex-col items-center">
               <div className="icons mb-6">{item.icon}</div>
               <Typography className="font-main font-medium lg:text-job sm:text-sm-job">
